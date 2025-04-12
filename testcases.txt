@@ -1,0 +1,47 @@
+test case 1:
+
+  Person1 50 Person1 1 Person2 2 Person3 1
+  Person2 60 Person1 Person2 Person3 Person4 common
+  Person3 30 Person1 Person3 common
+
+  output:
+  Person3 pays Person1 $7.50
+  Person3 pays Person2 $5.00
+  Person4 pays Person2 $15.00
+
+test case 2:
+
+  Person1 100 Person1 1 Person2 1 Person3 1 Person4 1
+  Person2 80 Person1 Person2 Person3 common
+  Person4 50 Person2 Person4 common
+
+  output:
+  Person3 pays Person1 $48.33
+  Person3 pays Person2 $3.33
+
+test case 3:
+
+  Person1 120 Person1 Person2 Person3 Person4 Person5 common
+  Person2 90 Person1 Person2 Person4 common
+  Person3 60 Person3 Person4 Person5 common
+
+  output:
+  Person4 pays Person1 $66.00
+  Person4 pays Person3 $8.00
+  Person5 pays Person3 $8.00
+  Person5 pays Person2 $36.00
+
+test case 4:
+
+  Alice 300 Alice 2 Bob 2 Charlie 1 Dave 1 Emma 3 Frank 1
+  Bob 120 Alice Bob Charlie Dave Emma common
+  Charlie 80 Charlie Emma Frank common
+  Emma 200 Alice Bob Charlie Dave Emma Frank common
+
+  output:
+  Charlie pays Alice $34.00
+  Dave pays Alice $87.33
+  Frank pays Alice $61.34
+  Frank pays Emma $26.00
+  Frank pays Bob $2.66
+
